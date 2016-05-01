@@ -1,0 +1,17 @@
+package fr.mikaelkrok.springlesson;
+
+/**
+ * Hello world!
+ *
+ */
+public class SpringLesson 
+{
+   public static void main(String[] args) {
+      ApplicationContext context = 
+             new ClassPathXmlApplicationContext("Beans.xml");
+
+      HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
+
+      obj.getMessage();
+   }
+}

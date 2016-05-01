@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <groupId>fr.mikaelkrok.springlesson</groupId>
+    <artifactId>SpringLesson</artifactId>
+    <packaging>pom</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+    <modelVersion>4.0.0</modelVersion>
+	
+	 <properties>
+        <junit.version>4.11</junit.version>
+        <spring.version>4.0.0.RELEASE</spring.version>
+        <jackson.version>2.3.2</jackson.version>
+    </properties>
+ 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+ 
+    
+    <modules>
+        <module>SL01_basic_project</module>
+        <!--module>SL02_junit_mock</module>
+        <module>SL03_spring_mvc</module>
+		<module>SL04_spring_securities</module-->
+    </modules>
+
+
+</project>
