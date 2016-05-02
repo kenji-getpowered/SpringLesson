@@ -1,2 +1,4 @@
-fr\mikaelkrok\springlesson\bean\HelloWorld.class
+fr\mikaelkrok\springlesson\SpringBean.class
+fr\mikaelkrok\springlesson\Operations.class
+fr\mikaelkrok\springlesson\OperationsService.class
 fr\mikaelkrok\springlesson\SpringLesson.class

@@ -16,13 +16,13 @@ public class StaticOperationTest {
 	}
 
 	@Test
-	public void additionCinqNumbers() {
+	public void addFiveNumbers() {
 		final long result = Operations.add(256, 512, 1024, 2048, 4096);
 		Assert.assertEquals(7936, result);
 	}
 
 	@Test
-	public void multiplyDeuxNumbers() {
+	public void multiplyTwoNumbers() {
 		final long lMultiplication = Operations.multiply(10, 20);
 		Assert.assertEquals(200, lMultiplication);
 	}

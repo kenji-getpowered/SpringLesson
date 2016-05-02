@@ -1,5 +1,9 @@
 package fr.mikaelkrok.springlesson;
 
+/**
+ * 
+ * @author Mikael KROK
+ */
 public class SpringBean {
 
    private String message;
@@ -8,7 +12,7 @@ public class SpringBean {
       this.message  = message;
    }
 
-   public void getMessage(){
-      System.out.println("Your Message : " + message);
+   public String getMessage(){
+      return "Your Message : " + message;
    }
 }
