@@ -15,6 +15,7 @@ public class SpringLesson
    public static void main(String[] args) {
       ApplicationContext context = 
 				new ClassPathXmlApplicationContext("springlesson-application-context.xml");
+
 	  SpringBean obj = (SpringBean) context.getBean("springBean");
       System.out.println(obj.getMessage());
    }
